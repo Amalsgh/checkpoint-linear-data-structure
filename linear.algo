@@ -1,0 +1,22 @@
+ALGORITHM linear
+VAR
+ar1: INTEGER[5];
+ar2: INTEGER[4];
+el :=0: INTEGER;
+i: INTEGER;
+j: INTEGER;
+
+BEGIN
+read (ar1);
+read(ar2);
+
+for i from 0 to ar1.length-1 step 1 do 
+for j from 0 to ar2.length-1 step 1 do 
+if ar1[i] := ar2[j] then 
+el:= el + 2*ar1[i];
+END if
+
+END for
+END for
+write el ;
+END
